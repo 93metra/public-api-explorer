@@ -1,11 +1,14 @@
 import s from './app.module.css';
+import { Router } from 'react-router-dom';
 
 function App() {
 
   return (
-    <div className={s.app}>
+    <Router>
+      <div className={s.app}>
 
-    </div>
+      </div>
+    </Router>
   );
 }
 
