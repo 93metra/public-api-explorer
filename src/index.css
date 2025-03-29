@@ -19,8 +19,11 @@ code {
 }
 
 :root {
-  /* --bg-color: #2b2e34;
-  --accent-bg-color: #1b1c1e; */
+  /* --bg-color: #98D2C0;    darker theme (blue-green)
+  --accent-bg-color: #4F959D;
+  --main-text-color: #F6F8D5;
+  --accent-color: #205781; */
+
   --bg-color: #9ACBD0;
   --accent-bg-color: #48A6A7;
   --main-text-color: #F2EFE7;
