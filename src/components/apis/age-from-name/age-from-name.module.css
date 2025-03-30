@@ -1,0 +1,133 @@
+.age_from_name {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  inline-size: 90%;
+  block-size: 80%;
+}
+
+.separator {
+  border-radius: 1px;
+  border-right: 1px solid var(--accent-color);
+  box-shadow: 0px 0px 1px var(--accent-color);
+  inline-size: 1px;
+  block-size: 85%;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  inline-size: 50%;
+  block-size: 90%;
+}
+
+.side__title {
+  opacity: .8;
+  color: var(--main-text-color);
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 3px var(--accent-color);
+}
+
+.code_block {
+  position: relative;
+  border-radius: 4px;
+  padding: 10px;
+  overflow: scroll;
+  color: var(--main-text-color);
+  font-family: monospace;
+  background-color: var(--accent-color);
+  inline-size: 90%;
+  block-size: 85%;
+  scrollbar-width: 3px;
+}
+
+.copy_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  padding: 4px;
+  background-color: var(--accent-color);
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.copy_button:hover {
+  box-shadow: 0px 0px 3px black;
+}
+
+.copy_button:active {
+  box-shadow: inset 0px 0px 3px black;
+}
+
+.copy_icon {
+  inline-size: 25px;
+}
+
+.try_it {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+  border-radius: 4px;
+  padding: 10px;
+  overflow: scroll;
+  color: var(--main-text-color);
+  background-color: var(--accent-color);
+  inline-size: 90%;
+  block-size: 85%;
+  scrollbar-width: 3px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  inline-size: 70%;
+}
+
+.submit_button {
+  margin-block-start: 40px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: currentColor;
+  font-size: 20px;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  inline-size: 70%;
+}
+
+.name_input {
+  border: 1px solid var(--main-text-color);
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: currentColor;
+  font-size: 20px;
+  background-color: var(--accent-color);
+  inline-size: 70%;
+}
+
+.result {
+  border-radius: 4px;
+  padding: 10px;
+  overflow: scroll;
+  color: var(--main-text-color);
+  font-size: 20px;
+  text-shadow: 0px 0px 3px var(--accent-color);
+  background-color: var(--accent-bg-color);
+  inline-size: 70%;
+  block-size: 60%;
+  scrollbar-width: 3px;
+}

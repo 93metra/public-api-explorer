@@ -1,7 +1,8 @@
 import s from './app.module.css';
 import AppHeader from '../app-header/app-header';
 import MainPage from '../main-page/main-page';
-import { Routes, Route } from 'react-router-dom'; // Import only Routes and Route
+import AgeFromName from '../apis/age-from-name/age-from-name';
+import { Routes, Route } from 'react-router-dom'; 
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <AppHeader />
         <Routes> 
           <Route path="/" element={<MainPage />} />
+          <Route path="/age-from-name" element={<AgeFromName />} />
         </Routes>
     </div>
   );
