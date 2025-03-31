@@ -1,6 +1,6 @@
 import s from './age-from-name.module.css';
-import copyIcon from '../../../images/copy-icon.png';
 import { useState } from 'react';
+import CodeBlock from '../../code-block/code-block';
 
 const AgeFromName = () => {
   const [Age, setAge] = useState('');
@@ -13,14 +13,6 @@ const AgeFromName = () => {
         console.log(data);
         setAge(data.age);
       });
-  };
-
-  const handleCopyClick = async () => {
-    try {
-      await navigator.clipboard.writeText(codeBlock);
-    } catch (err) {
-      console.error('Failed to copy code: ', err);
-    }
   };
 
   const codeBlock = `
@@ -48,12 +40,7 @@ const AgeFromName = () => {
     <div className={s.age_from_name}>
       <div className={s.side}>
         <h3 className={s.side__title}>Code:</h3>
-        <div className={s.code_block}>
-          <button className={s.copy_button} onClick={handleCopyClick}>
-            <img className={s.copy_icon} src={copyIcon} alt="Copy Code Icon" />
-          </button>
-          <pre><code className={s.code}>{codeBlock}</code></pre>
-        </div>
+        <CodeBlock code={codeBlock} />
       </div>
       <div className={s.separator}></div>
       <div className={s.side}>
