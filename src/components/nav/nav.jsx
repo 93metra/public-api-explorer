@@ -10,7 +10,7 @@ const Nav = () => {
           <Link to={'/age-from-name'} children={'Age From Name'} />
         </li>
         <li>
-          <Link to={'/example2'} children={'Example2'} />
+          <Link to={'/random-dog-image'} children={'Random Dog Image'} />
         </li>
       </ul>
     </nav>
