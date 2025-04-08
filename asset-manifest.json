@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d610248.css",
-    "main.js": "/static/js/main.62daa85a.js",
-    "index.html": "/index.html",
-    "main.5d610248.css.map": "/static/css/main.5d610248.css.map",
-    "main.62daa85a.js.map": "/static/js/main.62daa85a.js.map"
+    "main.css": "/93metra/public-api-explorer/static/css/main.5d610248.css",
+    "main.js": "/93metra/public-api-explorer/static/js/main.62daa85a.js",
+    "index.html": "/93metra/public-api-explorer/index.html",
+    "main.5d610248.css.map": "/93metra/public-api-explorer/static/css/main.5d610248.css.map",
+    "main.62daa85a.js.map": "/93metra/public-api-explorer/static/js/main.62daa85a.js.map"
   },
   "entrypoints": [
     "static/css/main.5d610248.css",
