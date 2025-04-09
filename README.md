@@ -6,13 +6,13 @@ Public API Explorer is a React.js web application that allows users to explore a
 
 ## 🚧 Project Status
 
-Current Status: Initial commit — project setup is done, but no APIs have been added yet.
+Current Status: In development - basic structure complete with 2 APIs integrated.
 
-The foundation of the app has been laid, and the first set of public APIs will be integrated soon. Stay tuned for updates!
+The foundation of the app has been laid, and two public APIs have been successfully integrated. More APIs will be added soon. Stay tuned for updates!
 
 ## 🌐 Live Demo
 
-Once the first version is ready, the app will be deployed and available via **GitHub Pages.** A link will be added here.
+The app is published on GitHub Pages and can be accessed [here](https://93metra.github.io/public-api-explorer/). However, please note that the public APIs may not always respond well when the app is opened through GitHub Pages. For a better experience, it is recommended to run the project locally.
 
 ## 💡 Features (Coming Soon)
 
@@ -34,4 +34,30 @@ This project is meant to be educational and fun — a great way to:
 - Learn how to make API calls in React
 - See practical examples of how to use APIs
 
-# Feel free to ⭐️ star the repo and follow along as the app evolves!
+## 💻 Running the Project Locally
+
+To get the best experience, it is recommended to run the project locally. Follow these steps:
+
+1. Clone the Repository:
+```
+git clone https://github.com/93metra/public-api-explorer.git
+```
+
+2. Navigate to the Project Directory:
+```
+cd public-api-explorer
+```
+
+3. Install Dependencies:
+```
+npm i
+```
+
+4. Run the Project:
+```
+npm start
+```
+
+This will start the development server and open the app in your default web browser. You can then interact with the public APIs directly from your local environment.
+
+### Feel free to ⭐️ star the repo and follow along as the app evolves!
