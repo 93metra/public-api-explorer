@@ -2,17 +2,21 @@
 
 ## 📌 Description
 
-Public API Explorer is a React.js web application that allows users to explore and interact with various public APIs — all in one place! Whether you're looking to get a random cat fact, see a cute dog picture, or discover something new, this app will let you try out different public APIs quickly and easily.
+Public API Explorer is a web application built with **React.js and Next.js** that allows users to explore and interact with various public APIs — all in one place! Whether you're looking to get a random cat fact, see a cute dog picture, or discover something new, this app will let you try out different public APIs quickly and easily.
+
+**Note:** This project is currently undergoing a migration from a standard React setup to **Next.js**. This is being done for practice, to learn Next.js features (especially for multi-page applications), and to prepare for deployment on Vercel.
 
 ## 🚧 Project Status
 
-Current Status: In development - basic structure complete with 2 APIs integrated.
+Current Status: **In Migration to Next.js**.
 
-The foundation of the app has been laid, and two public APIs have been successfully integrated. More APIs will be added soon. Stay tuned for updates!
+The original React-based foundation is complete with 2 APIs integrated. The project is now being migrated to Next.js to leverage its features and for educational purposes. Stay tuned for updates as the migration progresses and more APIs are added! Deployment will be shifted to Vercel upon completion.
 
 ## 🌐 Live Demo
 
-The app is published on GitHub Pages and can be accessed [here](https://93metra.github.io/public-api-explorer/). However, please note that the public APIs may not always respond well when the app is opened through GitHub Pages. For a better experience, it is recommended to run the project locally.
+The *original React version* was published on GitHub Pages [here](https://93metra.github.io/public-api-explorer/).
+
+**Please note this link points to the pre-migration version.** A new **Vercel deployment link** will be provided after the Next.js migration is complete. For the latest version and best experience, running the project locally is recommended, especially during the migration phase.
 
 ## 💡 Features (Coming Soon)
 
@@ -23,16 +27,19 @@ The app is published on GitHub Pages and can be accessed [here](https://93metra.
 
 ## 🛠️ Built With 
 
-- React.js – Frontend library for building the user interface
-- [Fetch API / Axios] – For making API requests
+- **Next.js** – The React framework (handling routing, rendering, and project structure)
+- **React.js** – Frontend library for building the user interface
+- [Fetch API] – For making API requests
 
 ## 📌 Goals
 
 This project is meant to be educational and fun — a great way to:
 
 - Discover interesting public APIs
-- Learn how to make API calls in React
+- Learn how to make API calls
 - See practical examples of how to use APIs
+- **Gain hands-on experience migrating a React application to Next.js**
+- **Learn and practice using Next.js for building multi-page applications**
 
 ## 💻 Running the Project Locally
 
