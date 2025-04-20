@@ -1,3 +1,5 @@
+"use client";
+
 import s from './age-from-name.module.css';
 import { useState } from 'react';
 import CodeBlock from '../../code-block/code-block';
@@ -7,12 +9,17 @@ const AgeFromName = () => {
   const [Name, setName] = useState('');
 
   const getAge = async () => {
-    fetch(`https://api.agify.io/?name=${Name}`)
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        setAge(data.age);
-      });
+    if (!Name.trim()) {
+      console.error('Name is empty or invalid');
+      return;
+    }
+    try {
+      const response = await fetch(`https://api.agify.io/?name=${encodeURIComponent(Name)}`);
+      const data = await response.json();
+      setAge(data.age);
+    } catch (error) {
+      console.error('Error fetching age:', error);
+    }
   };
 
   const codeBlock = `

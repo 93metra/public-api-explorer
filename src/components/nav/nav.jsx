@@ -1,16 +1,15 @@
 import s from './nav.module.css';
-import Link from './nav-link/nav-link';
+import NavButton from '../UI/button/nav-button/nav-button';
 
 const Nav = () => {
-
   return (
     <nav className={s.nav}>
       <ul className={s.links__list}>
         <li>
-          <Link to={'/age-from-name'} children={'Age From Name'} />
+          <NavButton rout={'/age-from-name'} children={'age-from-name'}/>
         </li>
         <li>
-          <Link to={'/random-dog-image'} children={'Random Dog Image'} />
+          <NavButton rout={'/random-dog-image'} children={'random-dog-image'}/>
         </li>
       </ul>
     </nav>

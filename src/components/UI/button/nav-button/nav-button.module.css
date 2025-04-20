@@ -1,0 +1,26 @@
+.navButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--accent-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 4px var(--bg-color);
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.navButton:hover {
+  border-color: var(--bg-color);
+  color: var(--bg-color);
+}
+
+.active {
+  border-color: var(--accent-color);
+  box-shadow: inset 0px 0px 4px var(--accent-color);
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+}

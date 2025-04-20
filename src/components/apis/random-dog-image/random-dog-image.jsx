@@ -1,3 +1,5 @@
+"use client";
+
 import s from './random-dog-image.module.css';
 import CodeBlock from '../../code-block/code-block';
 import { useState } from 'react';

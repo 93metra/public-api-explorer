@@ -1,0 +1,5 @@
+{
+  "/page": "app/page.js",
+  "/random-dog-image/page": "app/random-dog-image/page.js",
+  "/age-from-name/page": "app/age-from-name/page.js"
+}
