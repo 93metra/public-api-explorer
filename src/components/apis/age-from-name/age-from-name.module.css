@@ -95,3 +95,11 @@
   block-size: 60%;
   scrollbar-width: 3px;
 }
+
+.error {
+  color: #ff5b5b;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0px 0px 1px black;
+  inline-size: 70%;
+}

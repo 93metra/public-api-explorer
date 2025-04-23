@@ -1,6 +1,6 @@
 import s from './app.module.css';
 import AppHeader from '../app-header/app-header';
-import MainPage from '../main-page/main-page';
+import MainPage from '../welcome-page/welcome-page';
 import AgeFromName from '../apis/age-from-name/age-from-name';
 import RandomDogImage from '../apis/random-dog-image/random-dog-image';
 import { Routes, Route, Navigate } from 'react-router-dom'; 
