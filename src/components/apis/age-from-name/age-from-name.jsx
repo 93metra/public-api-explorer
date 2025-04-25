@@ -1,25 +1,43 @@
+"use client";
+
 import s from './age-from-name.module.css';
 import { useState } from 'react';
 import CodeBlock from '../../code-block/code-block';
 
 const AgeFromName = () => {
-  const [Age, setAge] = useState('');
-  const [Name, setName] = useState('');
+  const [age, setAge] = useState('');
+  const [name, setName] = useState('');
+  const [isLoading, setIsLoading] = useState(false); 
+  const [error, setError] = useState(''); 
 
   const getAge = async () => {
-    fetch(`https://api.agify.io/?name=${Name}`)
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        setAge(data.age);
-      });
+    if (!name.trim()) {
+      setError('Invalid or empty name.');
+      return;
+    }
+
+    setError('');
+    setIsLoading(true);
+
+    try {
+      const response = await fetch(`https://api.agify.io/?nam=${encodeURIComponent(name)}`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch.');
+      }
+      const data = await response.json();
+      setAge(data.age);
+    } catch (err) {
+      setError('Error: ' + err.message);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const codeBlock = `
   // Request function:
 
   const getAge = async () => {
-    fetch('https://api.agify.io/?name=${Name || 'John Doe'}')
+    fetch('https://api.agify.io/?name=${name || 'John Doe'}')
       .then(response => response.json())
       .then(data => {
         setAge(data.age);
@@ -34,7 +52,7 @@ const AgeFromName = () => {
     "name": "John Doe",
     "age": 74
   }
-  `
+  `;
 
   return (
     <div className={s.age_from_name}>
@@ -53,15 +71,27 @@ const AgeFromName = () => {
               getAge();
             }}
           >
-            <button className={s.submit_button} type="submit">Get Age</button>
+            <button
+              className={s.submit_button}
+              type="submit"
+              disabled={isLoading}>
+              {isLoading ? 'Loading...' : 'Get Age'}
+            </button>
             <input
               className={s.name_input}
               type="text"
-              value={Name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Enter a name"
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value),
+                  setError('')
+              }
+              }
+              placeholder="Name"
             />
-            <p className={s.result}>{Age || '...'}</p>
+            <p className={s.result}>{age || '...'}</p>
+            {error &&
+              <p className={s.error}>{error}</p>
+            }
           </form>
         </div>
       </div>

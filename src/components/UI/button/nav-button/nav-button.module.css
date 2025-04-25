@@ -1,4 +1,4 @@
-.link {
+.navButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
   transition: color .3s ease;
 }
 
-.link:hover {
+.navButton:hover {
   border-color: var(--bg-color);
   color: var(--bg-color);
 }

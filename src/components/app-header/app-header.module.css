@@ -13,7 +13,7 @@
   margin: 20px 0;
 }
 
-.title__link {
+.titleLink {
   color: var(--main-text-color);
   text-decoration: none;
 }

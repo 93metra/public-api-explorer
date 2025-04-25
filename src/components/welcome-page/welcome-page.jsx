@@ -1,6 +1,6 @@
-import s from './main-page.module.css';
+import s from './welcome-page.module.css';
 
-const MainPage = () => {
+const WelcomePage = () => {
   return (
     <div className={s.main_page}>
       <div className={s.wrapper}>
@@ -11,4 +11,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default WelcomePage;
