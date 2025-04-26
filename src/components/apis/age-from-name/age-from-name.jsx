@@ -3,12 +3,13 @@
 import s from './age-from-name.module.css';
 import { useState } from 'react';
 import CodeBlock from '../../code-block/code-block';
+import SubmitButton from '../../UI/button/submit-button/submit-button';
 
 const AgeFromName = () => {
   const [age, setAge] = useState('');
   const [name, setName] = useState('');
-  const [isLoading, setIsLoading] = useState(false); 
-  const [error, setError] = useState(''); 
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const getAge = async () => {
     if (!name.trim()) {
@@ -20,7 +21,7 @@ const AgeFromName = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(`https://api.agify.io/?nam=${encodeURIComponent(name)}`);
+      const response = await fetch(`https://api.agify.io/?name=${encodeURIComponent(name)}`);
       if (!response.ok) {
         throw new Error('Failed to fetch.');
       }
@@ -71,12 +72,10 @@ const AgeFromName = () => {
               getAge();
             }}
           >
-            <button
-              className={s.submit_button}
-              type="submit"
-              disabled={isLoading}>
-              {isLoading ? 'Loading...' : 'Get Age'}
-            </button>
+            <SubmitButton
+              children='Get Age'
+              isLoading={isLoading}
+            />
             <input
               className={s.name_input}
               type="text"

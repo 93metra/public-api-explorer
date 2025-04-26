@@ -48,16 +48,8 @@
   scrollbar-width: 3px;
 }
 
-.submit_button {
+.submitButton {
   margin-block-start: 30px;
-  border: 1px solid var(--main-text-color);
-  border-radius: 4px;
-  padding: 5px 10px;
-  color: currentColor;
-  font-size: 20px;
-  background-color: var(--accent-color);
-  cursor: pointer;
-  inline-size: 60%;
 }
 
 .dog_image__container {
@@ -67,7 +59,7 @@
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   box-shadow: 0px 0px 3px var(--main-text-color);
-  inline-size: 60%;
+  inline-size: 70%;
   aspect-ratio: 1 / 1;
 }
 

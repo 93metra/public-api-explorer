@@ -1,0 +1,22 @@
+.submitButton {
+  border: 1px solid var(--main-text-color);
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: currentColor;
+  font-size: 20px;
+  background-color: var(--accent-color);
+  transition: var(--btn-hover-transition);
+  cursor: pointer;
+  inline-size: 70%;
+}
+
+.submitButton:hover {
+  border-color: var(--bg-color);
+  color: var(--bg-color);
+}
+
+.submitButton:disabled:hover {
+  border-color: var(--main-text-color);
+  color: currentColor;
+  cursor: not-allowed;
+} 

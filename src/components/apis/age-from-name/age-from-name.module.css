@@ -49,23 +49,12 @@
 }
 
 .form {
+  margin-block-start: 40px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   gap: 10px;
-  inline-size: 70%;
-}
-
-.submit_button {
-  margin-block-start: 40px;
-  border: 1px solid var(--main-text-color);
-  border-radius: 4px;
-  padding: 5px 10px;
-  color: currentColor;
-  font-size: 20px;
-  background-color: var(--accent-color);
-  cursor: pointer;
   inline-size: 70%;
 }
 

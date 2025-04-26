@@ -2,6 +2,7 @@
 
 import s from './random-dog-image.module.css';
 import CodeBlock from '../../code-block/code-block';
+import SubmitButton from '../../UI/button/submit-button/submit-button';
 import { useState } from 'react';
 
 const RandomDogImage = () => {
@@ -59,13 +60,12 @@ const RandomDogImage = () => {
       <div className={s.side}>
         <h3 className={s.side__title}>Try it:</h3>
         <div className={s.try_it}>
-          <button
-            className={s.submit_button}
+          <SubmitButton
+            children='Get Dog Image'
+            isLoading={isLoading}
             onClick={getDogImage}
-            disabled={isLoading}
-          >
-            {isLoading ? 'Loading...' : 'Get Dog Image'}
-          </button>
+            extraClass={s.submitButton}
+          />
           {error &&
             <p className={s.error}>{error}</p>
           }
