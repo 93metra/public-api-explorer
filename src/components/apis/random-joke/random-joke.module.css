@@ -1,0 +1,74 @@
+.randomJoke {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  inline-size: 100%;
+  block-size: 80vh;
+}
+
+.separator {
+  border-radius: 1px;
+  border-right: 1px solid var(--accent-color);
+  box-shadow: 0px 0px 1px var(--accent-color);
+  inline-size: 1px;
+  block-size: 85%;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  inline-size: 50%;
+  block-size: 90%;
+}
+
+.side__title {
+  opacity: .8;
+  color: var(--main-text-color);
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 3px var(--accent-color);
+}
+
+.try_it {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+  border-radius: 4px;
+  padding: 10px;
+  overflow: scroll;
+  color: var(--main-text-color);
+  background-color: var(--accent-color);
+  inline-size: 90%;
+  block-size: 85%;
+  scrollbar-width: 3px;
+}
+
+.submitButton {
+  margin-block-start: 30px;
+}
+
+.jokeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  text-shadow: 0px 0px 2px black;
+  inline-size: 70%;
+}
+
+.jokePunchline {
+  font-weight: bold;
+}
+
+.error {
+  color: #ff5b5b;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0px 0px 1px black;
+  inline-size: 70%;
+}

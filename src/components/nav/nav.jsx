@@ -11,6 +11,9 @@ const Nav = () => {
         <li>
           <NavButton rout={'/random-dog-image'} children={'random-dog-image'}/>
         </li>
+        <li>
+          <NavButton rout={'/random-joke'} children={'random-joke'}/>
+        </li>
       </ul>
     </nav>
   );
